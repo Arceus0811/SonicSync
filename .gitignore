@@ -1,30 +1,29 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.kotlin
+# CMake / Visual Studio build trees (build output, PDBs and caches with local paths)
+/build/
+/out/
+CMakeUserPresets.json
+*.pdb
+*.ilk
+*.obj
+*.tlog
+*.lastbuildstate
+.vs/
+.idea/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Android / Gradle / Kotlin / NDK
+.gradle/
+.kotlin/
+.cxx/
+**/app/build/
+local.properties
+*.apk
+*.aab
+*.jks
+*.keystore
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Packaged releases are build products; publish them as releases instead of committing
+/artifacts/**/stage/
+/artifacts/**/*.zip
 
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
+# Remote host secrets, if ever generated inside the repo
+*.pfx

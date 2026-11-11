@@ -1,0 +1,9 @@
+SonicSync 1.0.2 for Windows x64
+
+1. Extract this archive to a normal folder.
+2. Right-click Install-SonicSync.ps1 and choose Run with PowerShell, or run:
+   powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-SonicSync.ps1
+3. Launch SonicSync from Start and search for SonicSync, or use its Desktop shortcut.
+4. To remove it, use Windows Settings > Apps > Installed apps > SonicSync, or run Uninstall-SonicSync.ps1.
+
+This per-user installer writes under LocalAppData and creates per-user shortcuts and an Installed Apps registration. It does not require administrator rights, install a driver/service, or alter Windows audio routing. The uninstaller removes only the known program files and shortcuts; any SonicSync data folders outside the program directory are left untouched. The desktop library and EQ settings are saved in %LOCALAPPDATA%\SonicSync\studio-session.txt. If Windows Search does not show the Start Menu entry immediately, wait for indexing to refresh or launch it once from the Start Menu folder.

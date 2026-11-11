@@ -1,0 +1,26 @@
+# Store text with LF in git; check out with the platform's native line endings.
+# This stops line-ending conversions from showing up as whole-file changes.
+* text=auto
+
+# Windows-only files keep CRLF everywhere
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.rc.in text eol=crlf
+*.inf text eol=crlf
+
+# Unix scripts keep LF everywhere
+gradlew text eol=lf
+*.sh text eol=lf
+
+# Binary assets
+*.png binary
+*.ico binary
+*.wav binary
+*.jar binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.lib binary

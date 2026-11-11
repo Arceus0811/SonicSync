@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.22)
+project(sonicsync_eq LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+get_filename_component(shared "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../shared" ABSOLUTE)
+include("${shared}/presets/catalog.cmake")
+add_library(sonicsync_eq SHARED equalizer_jni.cpp "${shared}/dsp/dsp.cpp" "${shared}/dsp/eq_state.cpp")
+target_include_directories(sonicsync_eq PRIVATE "${shared}/dsp" "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_link_options(sonicsync_eq PRIVATE "-Wl,-z,max-page-size=16384")

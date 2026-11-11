@@ -1,0 +1,108 @@
+JAVA_HOME=E:\And std\jbr
+ANDROID_SDK_ROOT=E:\SonicSyncToolchain\AndroidSdk
+GRADLE_USER_HOME=E:\SonicSyncToolchain\GradleCache
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+w: file:///C:/Users/pdv81/OneDrive/Desktop/cgpt%20projects/SonicSync-fixed/platforms/android/app/build.gradle.kts:10:31: 'fun srcDir(srcDir: Any): Any' is deprecated. Use `directories` mutable set instead.
+Observed package id 'platforms;android-37.2' in inconsistent location 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2' (Expected 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2')
+Already observed package id 'platforms;android-37.2' in 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2'. Skipping duplicate at 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2'
+Warning: Observed package id 'platforms;android-37.2' in inconsistent location 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2' (Expected 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2')
+Warning: Already observed package id 'platforms;android-37.2' in 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2'. Skipping duplicate at 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2'
+Warning: Observed package id 'platforms;android-37.2' in inconsistent location 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2' (Expected 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2')
+Warning: Already observed package id 'platforms;android-37.2' in 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2'. Skipping duplicate at 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2'
+Checking the license for package NDK (Side by side) 28.2.13676358 in E:\SonicSyncToolchain\AndroidSdk\licenses
+License for package NDK (Side by side) 28.2.13676358 accepted.
+Preparing "Install NDK (Side by side) 28.2.13676358 v.28.2.13676358".
+"Install NDK (Side by side) 28.2.13676358 v.28.2.13676358" ready.
+Installing NDK (Side by side) 28.2.13676358 in E:\SonicSyncToolchain\AndroidSdk\ndk\28.2.13676358
+"Install NDK (Side by side) 28.2.13676358 v.28.2.13676358" complete.
+"Install NDK (Side by side) 28.2.13676358 v.28.2.13676358" finished.
+Warning: Observed package id 'platforms;android-37.2' in inconsistent location 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2' (Expected 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2')
+Warning: Already observed package id 'platforms;android-37.2' in 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2'. Skipping duplicate at 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2'
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:javaPreCompileDebug
+> Task :app:mapDebugSourceSetPaths
+> Task :app:parseDebugLocalResources
+> Task :app:compileDebugNavigationResources
+> Task :app:generateDebugRFile
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:desugarDebugFileDependencies
+> Task :app:checkDebugDuplicateClasses
+
+> Task :app:configureCMakeDebug[arm64-v8a]
+Warning: Observed package id 'platforms;android-37.2' in inconsistent location 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2' (Expected 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2')
+Warning: Already observed package id 'platforms;android-37.2' in 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2'. Skipping duplicate at 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2'
+Checking the license for package CMake 3.22.1 in E:\SonicSyncToolchain\AndroidSdk\licenses
+License for package CMake 3.22.1 accepted.
+Preparing "Install CMake 3.22.1 v.3.22.1".
+"Install CMake 3.22.1 v.3.22.1" ready.
+Installing CMake 3.22.1 in E:\SonicSyncToolchain\AndroidSdk\cmake\3.22.1
+"Install CMake 3.22.1 v.3.22.1" complete.
+"Install CMake 3.22.1 v.3.22.1" finished.
+Warning: Observed package id 'platforms;android-37.2' in inconsistent location 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2' (Expected 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2')
+Warning: Already observed package id 'platforms;android-37.2' in 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2'. Skipping duplicate at 'E:\SonicSyncToolchain\AndroidSdk\platforms\android-37.2-2'
+
+> Task :app:mergeLibDexDebug
+> Task :app:mergeExtDexDebug
+> Task :app:compileDebugKotlin
+> Task :app:processDebugManifestForPackage
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86]
+> Task :app:buildCMakeDebug[x86]
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/pdv81/OneDrive/Desktop/cgpt%20projects/SonicSync-fixed/platforms/android/app/src/main/java/com/sonicsync/android/StudioAudioProcessor.kt:51:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/pdv81/OneDrive/Desktop/cgpt%20projects/SonicSync-fixed/platforms/android/app/src/main/java/com/sonicsync/android/YouTubeEmbedActivity.kt:24:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/pdv81/OneDrive/Desktop/cgpt%20projects/SonicSync-fixed/platforms/android/app/src/main/java/com/sonicsync/android/YouTubeEmbedActivity.kt:25:16 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/pdv81/OneDrive/Desktop/cgpt%20projects/SonicSync-fixed/platforms/android/app/src/main/java/com/sonicsync/android/YouTubeEmbedActivity.kt:46:22 'var allowFileAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+w: file:///C:/Users/pdv81/OneDrive/Desktop/cgpt%20projects/SonicSync-fixed/platforms/android/app/src/main/java/com/sonicsync/android/YouTubeEmbedActivity.kt:47:22 'var allowUniversalAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:processDebugJavaRes
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:processDebugResources
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:mergeDebugJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest
+
+BUILD SUCCESSFUL in 3m 24s
+50 actionable tasks: 50 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html
+BUILD_EXIT=0

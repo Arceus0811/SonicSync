@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SonicSync control message",
+  "$comment": "Version 1 uses HTTPS with a user-confirmed SHA-256 certificate pin, one-time six-digit pairing code, local Windows approval, and a random bearer token. The Windows endpoint is an explicit foreground service and never creates a firewall rule.",
+  "type": "object",
+  "required": ["version", "type", "id", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {"const": 1},
+    "type": {"enum": ["pair.request", "pair.approved", "device.disconnect", "device.disconnected", "media.control", "media.control.result", "media.state"]},
+    "id": {"type": "string", "minLength": 1, "maxLength": 64, "pattern": "^[A-Za-z0-9_-]+$"},
+    "payload": {"type": "object", "maxProperties": 32}
+  },
+  "allOf": [{
+    "if": {"properties": {"type": {"const": "pair.request"}}},
+    "then": {"properties": {"payload": {"required": ["code", "deviceName"], "properties": {
+      "code": {"type": "string", "pattern": "^[0-9]{6}$"}, "deviceName": {"type": "string", "maxLength": 80}
+    }}}}
+  }, {
+    "if": {"properties": {"type": {"const": "pair.approved"}}},
+    "then": {"properties": {"payload": {"required": ["token", "hostName", "capabilities"], "properties": {
+      "token": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "hostName": {"type": "string", "maxLength": 253},
+      "capabilities": {"type": "array", "items": {"enum": ["media.state", "media.play", "media.pause", "media.next", "media.previous"]}
+    }}}}}
+  }, {
+    "if": {"properties": {"type": {"const": "media.control"}}},
+    "then": {"properties": {"payload": {"required": ["action"], "properties": {
+      "action": {"enum": ["play", "pause", "toggle", "next", "previous"]}
+    }}}}
+  }, {
+    "if": {"properties": {"type": {"const": "media.state"}}},
+    "then": {"properties": {"payload": {"required": ["available"], "properties": {
+      "available": {"type": "boolean"}, "title": {"type": "string"}, "artist": {"type": "string"},
+      "album": {"type": "string"}, "source": {"type": "string"}, "error": {"type": "string"},
+      "playback": {"enum": ["playing", "paused", "stopped"]}
+    }}}}
+  }]
+}
